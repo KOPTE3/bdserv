@@ -11,10 +11,10 @@ import collections
 from optparse import OptionParser
 from multiprocessing.dummy import Pool as ThreadPool
 
-sys.path.append('../lib')
+sys.path.append('lib')
 import tools
 
-CONFIG_PATH = '/home/tpadmin/dbap/test.conf'
+CONFIG_PATH = '/home/tpadmin/serv2/test.conf'
 settings = tools.Configuration(CONFIG_PATH).get_section('perf_test')
 
 class TestLog(object):

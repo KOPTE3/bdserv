@@ -13,13 +13,13 @@ import itertools
 from optparse import OptionParser
 
 import func_test_constants as constants
-sys.path.append('../lib')
-sys.path.append('../doc')
+sys.path.append('lib')
+sys.path.append('doc')
 
 import tools
 from doc_conf import DISCR
 
-CONFIG_PATH = '/home/tpadmin/dbap/test.conf'
+CONFIG_PATH = '/home/tpadmin/serv2/test.conf'
 settings = tools.Configuration(CONFIG_PATH).get_section('func_test')
 
 class TestLog(object):
