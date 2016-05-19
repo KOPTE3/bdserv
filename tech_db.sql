@@ -133,7 +133,7 @@ DROP TRIGGER IF EXISTS `tech_db`.`thread_AFTER_UPDATE` $$
 USE `tech_db`$$
 CREATE DEFINER = CURRENT_USER TRIGGER `tech_db`.`thread_AFTER_UPDATE` AFTER UPDATE ON `thread` FOR EACH ROW
 BEGIN
-UPDATE `post` SET `post`.`isDeleted` = NEW.`isDeleted` WHERE `post`.`threadParentId` = NEW.`idThread`;
+UPDATE `post` SET `post`.`isDeleted` = NEW.`isDeleted` WHERE `post`.`thread` = NEW.`id`;
 END$$
 
 
