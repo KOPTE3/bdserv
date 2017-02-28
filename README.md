@@ -38,7 +38,7 @@ describe('Our awesome test', () => {
             feature: 'super-feature'
         });
         
-        assert.equals([] + {}, '[object Object]', 'Wat?');
+        assert.equal([] + {}, '[object Object]', 'Wat?');
     })
 });
 ```
